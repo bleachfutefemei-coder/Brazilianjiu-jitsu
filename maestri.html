@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ - Mari Maeștri ai Brazilian Jiu-Jitsu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fef7f0; font-family: 'Segoe UI', 'Roboto', serif; color: #3e2a24; line-height: 1.6; }
+        .fixed-header { position: fixed; top: 0; left: 0; width: 100%; background: linear-gradient(135deg, #c97e5a, #ac6242); z-index: 1000; border-bottom: 2px solid #eac39e; }
+        .header-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+        .site-title { font-size: 1.7rem; font-weight: 700; color: #fff5ea; font-family: 'Georgia', serif; }
+        .site-title span { font-size: 0.85rem; color: #ffe1c6; }
+        .nav-menu ul { display: flex; list-style: none; gap: 1.5rem; flex-wrap: wrap; }
+        .nav-menu a { text-decoration: none; font-weight: 600; color: #fff5ea; padding: 0.4rem 0; transition: 0.2s; border-bottom: 2px solid transparent; }
+        .nav-menu a:hover { border-bottom-color: #ffddb0; }
+        .main-content { padding-top: 90px; min-height: 100vh; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        .content-card { background: #ffffff; border-radius: 28px; box-shadow: 0 12px 28px rgba(0,0,0,0.04); margin-bottom: 2rem; border: 1px solid #f3e2d4; }
+        .card-inner { padding: 2.2rem; }
+        h1 { font-size: 2.4rem; color: #bc6a48; margin-bottom: 1rem; border-left: 6px solid #d9946c; padding-left: 1rem; }
+        h2 { font-size: 1.9rem; color: #bc6a48; margin: 1.5rem 0 1rem; border-left: 5px solid #e2b48c; padding-left: 1rem; }
+        .masters-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1.5rem; margin: 1.8rem 0; }
+        .master-card { background: #fef5ed; border-radius: 20px; padding: 1.2rem; text-align: center; border: 1px solid #f0cfb5; }
+        .master-card h3 { font-size: 1.3rem; color: #bc6a48; margin-bottom: 0.5rem; }
+        p { margin-bottom: 1rem; color: #4d3529; }
+        .quote { font-style: italic; background: #fef3ea; padding: 1.2rem 1.8rem; border-radius: 30px; margin: 1.5rem 0; border-left: 6px solid #e2aa7a; }
+        footer { background: #fcf3e9; padding: 1.8rem; text-align: center; margin-top: 2rem; border-top: 1px solid #e9d6c6; }
+        @media (max-width: 700px) { .header-container { flex-direction: column; text-align: center; } .main-content { padding-top: 120px; } }
+    </style>
+</head>
+<body>
+<div class="fixed-header">
+    <div class="header-container">
+        <div class="site-title">🥋 Brazilian Jiu-Jitsu <span>| Istorie, Tradiție, Evoluție</span></div>
+        <div class="nav-menu"><ul><li><a href="index.html">🏠 Acasă</a></li><li><a href="origini.html">🌱 Origini</a></li><li><a href="maestri.html">🥋 Maeștri</a></li><li><a href="evolutie.html">📜 Evoluție</a></li><li><a href="mostenire.html">🏆 Moștenire</a></li><li><a href="bibliografie.html">📚 Bibliografie</a></li></ul></div>
+    </div>
+</div>
+<div class="main-content">
+    <div class="container">
+        <div class="content-card"><div class="card-inner">
+            <h1>🥋 Maeștrii care au scris istoria</h1>
+            <p>De la familia Gracie la mari campioni care au răspândit BJJ în lume, fiecare nume reprezintă o filă de curaj și inovație.</p>
+            <div class="masters-grid">
+                <div class="master-card"><h3>Mitsuyo Maeda</h3><p>Pionierul care a adus arta în Brazilia, mentorul lui Carlos Gracie.</p></div>
+                <div class="master-card"><h3>Carlos Gracie</h3><p>Fondatorul primei academii, părintele BJJ modern.</p></div>
+                <div class="master-card"><h3>Hélio Gracie</h3><p>Geniul care a dezvoltat principiile leverage-ului și eficienței.</p></div>
+                <div class="master-card"><h3>Rickson Gracie</h3><p>Simbolul invincibilității, 400+ victorii neînfrânt.</p></div>
+                <div class="master-card"><h3>Royce Gracie</h3><p>Eroul UFC 1, a demonstrat lumii puterea BJJ.</p></div>
+                <div class="master-card"><h3>Rolls Gracie</h3><p>Inovator care a îmbinat BJJ cu lupta liberă.</p></div>
+                <div class="master-card"><h3>Jean Jacques Machado</h3><p>Unul dintre cei mai tehnici maeștri, răspândit arta în SUA.</p></div>
+                <div class="master-card"><h3>Saulo Ribeiro</h3><p>Multiplu campion mondial, autor al cărții "Jiu-Jitsu University".</p></div>
+            </div>
+            <div class="quote">„Un luptător de Jiu-Jitsu nu domină prin forță brută, ci prin inteligență și precizie.” — Rickson Gracie</div>
+            <p>Toți acești maeștri au construit punți între generații, iar astăzi centurile roșii și negre sunt păstrătoarele tradiției vii.</p>
+        </div></div>
+    </div>
+    <footer><p>🥋 Brazilian Jiu-Jitsu — Omagiu maeștrilor care au construit această artă</p><p>© 2025</p></footer>
+</div>
+</body>
+</html>

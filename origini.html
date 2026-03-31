@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ - Originile Brazilian Jiu-Jitsu</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background: #fef7f0; font-family: 'Segoe UI', 'Roboto', serif; color: #3e2a24; line-height: 1.6; }
+        .fixed-header { position: fixed; top: 0; left: 0; width: 100%; background: linear-gradient(135deg, #c97e5a, #ac6242); box-shadow: 0 4px 15px rgba(0,0,0,0.08); z-index: 1000; border-bottom: 2px solid #eac39e; }
+        .header-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
+        .site-title { font-size: 1.7rem; font-weight: 700; color: #fff5ea; font-family: 'Georgia', serif; }
+        .site-title span { font-size: 0.85rem; color: #ffe1c6; }
+        .nav-menu ul { display: flex; list-style: none; gap: 1.5rem; flex-wrap: wrap; }
+        .nav-menu a { text-decoration: none; font-weight: 600; color: #fff5ea; padding: 0.4rem 0; transition: 0.2s; border-bottom: 2px solid transparent; }
+        .nav-menu a:hover { border-bottom-color: #ffddb0; color: #ffffff; }
+        .main-content { padding-top: 90px; min-height: 100vh; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+        .content-card { background: #ffffff; border-radius: 28px; box-shadow: 0 12px 28px rgba(0,0,0,0.04); margin-bottom: 2rem; border: 1px solid #f3e2d4; }
+        .card-inner { padding: 2.2rem; }
+        h1 { font-size: 2.4rem; color: #bc6a48; margin-bottom: 1rem; border-left: 6px solid #d9946c; padding-left: 1rem; }
+        h2 { font-size: 1.9rem; color: #bc6a48; margin: 1.5rem 0 1rem; border-left: 5px solid #e2b48c; padding-left: 1rem; }
+        p { margin-bottom: 1rem; color: #4d3529; }
+        .timeline-item { background: #fef5ed; border-left: 5px solid #d9946c; padding: 1rem 1.2rem; margin-bottom: 1rem; border-radius: 16px; }
+        .timeline-year { font-weight: bold; font-size: 1.2rem; color: #bc6a48; }
+        .quote { font-style: italic; background: #fef3ea; padding: 1.2rem 1.8rem; border-radius: 30px; margin: 1.5rem 0; border-left: 6px solid #e2aa7a; color: #8b5a40; }
+        footer { background: #fcf3e9; padding: 1.8rem; text-align: center; margin-top: 2rem; border-top: 1px solid #e9d6c6; color: #9b6e54; }
+        @media (max-width: 700px) { .header-container { flex-direction: column; text-align: center; } .main-content { padding-top: 120px; } .card-inner { padding: 1.3rem; } h1 { font-size: 1.8rem; } }
+    </style>
+</head>
+<body>
+<div class="fixed-header">
+    <div class="header-container">
+        <div class="site-title">🥋 Brazilian Jiu-Jitsu <span>| Istorie, Tradiție, Evoluție</span></div>
+        <div class="nav-menu"><ul><li><a href="index.html">🏠 Acasă</a></li><li><a href="origini.html">🌱 Origini</a></li><li><a href="maestri.html">🥋 Maeștri</a></li><li><a href="evolutie.html">📜 Evoluție</a></li><li><a href="mostenire.html">🏆 Moștenire</a></li><li><a href="bibliografie.html">📚 Bibliografie</a></li></ul></div>
+    </div>
+</div>
+<div class="main-content">
+    <div class="container">
+        <div class="content-card"><div class="card-inner">
+            <h1>🌿 Originile BJJ: De la samurai la Brazilia</h1>
+            <p>Brazilian Jiu-Jitsu își are rădăcinile în <strong>Jujitsu-ul tradițional japonez</strong> și în <strong>Kodokan Judo</strong> creat de Jigoro Kano. Povestea spune că <strong>Mitsuyo Maeda</strong> (Conde Koma), unul dintre cei mai mari experți în arte marțiale, a emigrat în Brazilia la începutul secolului XX. Acolo, el a predat arta luptei lui Carlos Gracie, care împreună cu frații săi, în special Hélio, a adaptat tehnicile pentru a pune accent pe pârghii, strangulări și poziții de control la sol — nașterea stilului cunoscut astăzi drept Brazilian Jiu-Jitsu.</p>
+            <div class="timeline">
+                <div class="timeline-item"><span class="timeline-year">1914</span> — Mitsuyo Maeda debarcă în Brazilia, susține demonstrații memorabile.</div>
+                <div class="timeline-item"><span class="timeline-year">1925</span> — Carlos Gracie deschide prima academie BJJ din Rio de Janeiro.</div>
+                <div class="timeline-item"><span class="timeline-year">Anii '50</span> — Hélio Gracie redefinește leverage-ul și eficiența mișcărilor.</div>
+            </div>
+            <div class="quote">„Arta nu aparține unui singur om, ci tuturor celor care sunt dispuși să sângereze pe tatami pentru a o înțelege.” — Mitsuyo Maeda</div>
+            <p>Astfel, rădăcinile japoneze s-au împletit cu spiritul brazilian, dând naștere unei arte marțiale unice, axate pe superioritatea tehnicii asupra forței brute.</p>
+        </div></div>
+    </div>
+    <footer><p>🥋 Brazilian Jiu-Jitsu — Istoria unei arte marțiale născute din tradiție și inovație</p><p>© 2025 - Toate drepturile rezervate</p></footer>
+</div>
+</body>
+</html>

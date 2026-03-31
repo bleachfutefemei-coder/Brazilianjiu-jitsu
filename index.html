@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BJJ - Istoria Brazilian Jiu-Jitsu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fef7f0;
+            font-family: 'Segoe UI', 'Roboto', 'Georgia', serif;
+            color: #3e2a24;
+            line-height: 1.6;
+        }
+
+        .fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #c97e5a 0%, #ac6242 100%);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            z-index: 1000;
+            border-bottom: 2px solid #eac39e;
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .site-title {
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: #fff5ea;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+            font-family: 'Georgia', serif;
+        }
+
+        .site-title span {
+            font-size: 0.85rem;
+            font-weight: normal;
+            color: #ffe1c6;
+        }
+
+        .nav-menu ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            color: #fff5ea;
+            padding: 0.4rem 0;
+            transition: 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-menu a:hover {
+            border-bottom-color: #ffddb0;
+            color: #ffffff;
+        }
+
+        .main-content {
+            padding-top: 90px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .hero-card, .content-card {
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.04);
+            margin-bottom: 2rem;
+            border: 1px solid #f3e2d4;
+            transition: transform 0.2s;
+        }
+
+        .hero-card:hover, .content-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .card-inner {
+            padding: 2.2rem;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            color: #b sixteen662;
+            color: #bc6a48;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            border-left: 6px solid #d9946c;
+            padding-left: 1rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            color: #bc6a48;
+            margin: 1.5rem 0 1rem;
+            border-left: 5px solid #e2b48c;
+            padding-left: 1rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #4d3529;
+        }
+
+        .quote {
+            font-style: italic;
+            background: #fef3ea;
+            padding: 1.2rem 1.8rem;
+            border-radius: 30px;
+            margin: 1.5rem 0;
+            color: #8b5a40;
+            border-left: 6px solid #e2aa7a;
+        }
+
+        .stats-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.8rem 0;
+        }
+
+        .stat-card {
+            background: #fef5ed;
+            border-radius: 20px;
+            padding: 1rem 1.5rem;
+            text-align: center;
+            flex: 1;
+            min-width: 130px;
+            border-bottom: 3px solid #e2aa7a;
+        }
+
+        .btn-explore {
+            display: inline-block;
+            background: #d9946c;
+            color: white;
+            padding: 0.6rem 1.4rem;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 0.8rem;
+            transition: 0.2s;
+        }
+
+        .btn-explore:hover {
+            background: #bc6a48;
+            transform: translateX(3px);
+        }
+
+        footer {
+            background: #fcf3e9;
+            padding: 1.8rem;
+            text-align: center;
+            margin-top: 2rem;
+            border-top: 1px solid #e9d6c6;
+            color: #9b6e54;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 700px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .main-content {
+                padding-top: 120px;
+            }
+            .card-inner {
+                padding: 1.3rem;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="fixed-header">
+    <div class="header-container">
+        <div class="site-title">
+            🥋 Brazilian Jiu-Jitsu <span>| Istorie, Tradiție, Evoluție</span>
+        </div>
+        <div class="nav-menu">
+            <ul>
+                <li><a href="index.html">🏠 Acasă</a></li>
+                <li><a href="origini.html">🌱 Origini</a></li>
+                <li><a href="maestri.html">🥋 Maeștri</a></li>
+                <li><a href="evolutie.html">📜 Evoluție</a></li>
+                <li><a href="mostenire.html">🏆 Moștenire</a></li>
+                <li><a href="bibliografie.html">📚 Bibliografie</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="container">
+        <div class="hero-card">
+            <div class="card-inner">
+                <h1>🔥 Istoria Brazilian Jiu-Jitsu</h1>
+                <p>Bine ai venit pe acest altar dedicat artei marțiale care a revoluționat luptele corp la corp. <strong>Brazilian Jiu-Jitsu (BJJ)</strong> nu este doar un sport, ci o filozofie scrisă cu sudoare, sacrificiu și pasiune. De la rădăcinile japoneze, la transformarea în Brazilia și dominația globală, fiecare pagină dezvăluie o parte din această călătorie fascinantă.</p>
+                <div class="quote">
+                    „Arta nu aparține unui singur om, ci tuturor celor care sunt dispuși să învețe pe tatami.” — Filosofie BJJ
+                </div>
+                <div class="stats-row">
+                    <div class="stat-card"><strong>🌍 150+ țări</strong><br>cu academii BJJ</div>
+                    <div class="stat-card"><strong>🥇 1993</strong><br>UFC 1 - BJJ în lume</div>
+                    <div class="stat-card"><strong>🟫 Centura Roșie</strong><br>Cel mai înalt rang</div>
+                </div>
+                <p>Navighează prin meniul de sus pentru a descoperi <strong>Originile, Maeștrii legendari, Evoluția spectaculoasă, Moștenirea</strong> și o pagină dedicată <strong>Bibliografiei</strong> cu sursele utilizate.</p>
+                <a href="origini.html" class="btn-explore">Explorează istoria →</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>🥋 Brazilian Jiu-Jitsu — Istoria unei arte marțiale născute din tradiție și inovație</p>
+        <p>© 2025 - Toate drepturile rezervate | Design cald inspirat de tatami</p>
+    </footer>
+</div>
+
+</body>
+</html>
